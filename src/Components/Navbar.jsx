@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="navbar container  mx-auto">
       <div className="navbar-start">
         <div className="flex items-center gap-1 font-bold text-xl">
-          <h2 className='text-3xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>
+          <h2 className='text-3xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#4F39F6] to-[#9514FA] p-2'>
   DigiTools
 </h2>
         </div>
