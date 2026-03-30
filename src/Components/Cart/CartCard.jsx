@@ -6,10 +6,10 @@ const CartCard = ({cart,setCart}) => {
     // cart er calculation
     // const total = cart.reduce((total, item) => total + item.price, 0)
 
-    // const handleRemoveBtn = (item) => {
-    //     const filterIt = cart.filter(c => c.id !== item.id)
-    //     setCart(filterIt)
-    // }
+    const handleRemoveBtn = (item) => {
+        const filterIt = cart.filter(c => c.id !== item.id)
+        setCart(filterIt)
+    }
     
     return (
         <div className="w-full">
