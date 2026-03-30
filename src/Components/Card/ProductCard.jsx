@@ -13,7 +13,19 @@ const ProductCard = ({DigitalData}) => {
                 <h1 className=' font-bold text-4xl mb-4'>Premium Digital Tools</h1>
                 <p className='text-[#627382]'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
                 
-            
+            <div className="flex justify-center py-10">
+           {/* daynamic kore cls ke than condition diye bg cng kora hoise */}
+                <button onClick={() => setProduct('product')}
+
+                className={`btn border-none ${product === 'product' ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : ""} rounded-r-none rounded-l-full w-30 py-7`}>Products</button>
+
+                <button onClick={() => setProduct('cart')} 
+
+                className={`btn border-none ${product === 'cart' ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : ""}
+                    rounded-l-none rounded-r-full w-30 py-7`} 
+                >Cart (0)
+                </button>
+                </div>
                 
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 container mx-auto mt-10">
