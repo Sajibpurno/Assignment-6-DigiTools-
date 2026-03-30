@@ -47,7 +47,7 @@ const CartCard = ({cart,setCart}) => {
                 </div>
 
             ) : (
-                <div className="text-center py-10 text-zinc-500 text-xl font-medium border-2 border-dashed rounded-2xl">
+                <div className="card text-[#627382] text-center py-20 text-4xl font-medium bg-white rounded-xl shadow-xl">
                     Your cart is empty! 🛒
                 </div>
             )}
