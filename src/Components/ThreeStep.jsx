@@ -52,7 +52,7 @@ const ThreeStep = () => {
                             {/* Card Body with Center Text */}
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title text-2xl font-semibold">{step.title}</h2>
-                                <p className="text-gray-500 max-w-[250px]">{step.description}</p>
+                                <p className="text-gray-500 max-w-62.5">{step.description}</p>
                             </div>
                         </div>
                     ))
