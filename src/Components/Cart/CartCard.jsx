@@ -4,7 +4,7 @@ const CartCard = ({cart,setCart}) => {
     console.log(cart);
 
     // cart er calculation
-    // const total = cart.reduce((total, item) => total + item.price, 0)
+    const total = cart.reduce((total, item) => total + item.price, 0)
 
     const handleRemoveBtn = (item) => {
         const filterIt = cart.filter(c => c.id !== item.id)
