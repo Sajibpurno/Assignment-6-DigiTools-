@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar'
 import SimplePricing from './Components/SimplePricing'
 import ThreeStep from './Components/ThreeStep'
 import ProductCard from './Components/Card/ProductCard'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
   const DigitalData = fetch('/Data.json').then(res => res.json())
@@ -27,6 +28,7 @@ function App() {
       <SimplePricing></SimplePricing>
     </main>
     <footer></footer>
+    <ToastContainer />
     </>
   )
 }

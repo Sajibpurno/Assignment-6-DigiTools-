@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaCheck } from "react-icons/fa";
+import { toast } from 'react-toastify';
 
-const Card = ({ product }) => {
+const Card = ({ product, cart, setCart }) => {
+    const [buy, setBuy] = useState(false)
+
+    const handleBuyBtn = () => {
+        setBuy(true);
+        toast.success("Item added to cart!")
+        setCart([...cart, product])
+    };
+
+
     // Tag Type onujayi dynamic color set korar logic
     const getTagStyles = (type) => {
         switch (type) {
@@ -39,10 +49,10 @@ const Card = ({ product }) => {
                 </div>
 
                 {/* 4. Features List (Dynamic) */}
-                <ul className="flex flex-col gap-4 mb-10 flex-grow">
+                <ul className="flex flex-col gap-4 mb-10 grow">
                     {product.features.map((feature, index) => (
                         <li key={index} className="flex items-start gap-3">
-                            <FaCheck className="text-emerald-500 mt-1 flex-shrink-0" />
+                            <FaCheck className="text-emerald-500 mt-1 shrink-0" />
                             <span className="text-gray-600 text-sm font-medium leading-tight">
                                 {feature}
                             </span>
@@ -52,8 +62,12 @@ const Card = ({ product }) => {
 
                 {/* 5. Action Button */}
                 <div className="mt-auto">
-                    <button className="btn bg-[#8B2CFF] hover:bg-[#7a25e6] text-white border-none rounded-full w-full py-4 h-auto text-lg font-bold transition-transform active:scale-95 shadow-lg shadow-purple-200">
-                        Buy Now
+                    <button onClick={handleBuyBtn}
+
+                     className={`btn ${buy ? 'bg-linear-to-r from-[#f6395c] to-[#9514FA] hover:bg-[#b910e8]' 
+                     : 
+                     'bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:bg-[#7a25e6]'} text-white border-none rounded-full w-full py-4 h-auto text-lg font-bold transition-transform active:scale-95 shadow-lg shadow-purple-200`}>
+                        {buy === true ? "Add to Cart" : "Buy Now"}
                     </button>
                 </div>
             </div>
