@@ -7,12 +7,18 @@ const Card = ({ product, cart, setCart }) => {
 
     const handleBuyBtn = () => {
         setBuy(true);
+        const  duplicateData = cart.find(c => c.id === product.id)
+            if(duplicateData){
+                toast.error("Item already in cart!")
+                return
+            }
         toast.success("Item added to cart!")
         setCart([...cart, product])
     };
 
 
     // Tag Type onujayi dynamic color set korar logic
+    
     const getTagStyles = (type) => {
         switch (type) {
             case 'best-seller': return 'bg-amber-100 text-amber-700 border-amber-200';
