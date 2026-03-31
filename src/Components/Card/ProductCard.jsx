@@ -1,13 +1,13 @@
-import React, { use, useState } from 'react';
+import React, { use } from 'react';
 import Card from './Card';
 import CartCard from '../Cart/CartCard';
 
-const ProductCard = ({DigitalData}) => {
+const ProductCard = ({DigitalData, cart, setCart,setProduct, product}) => {
     const data = use(DigitalData)
     
-    const [product, setProduct] = useState('product')
+    //const [product, setProduct] = useState('product')
     
-    const [cart, setCart] = useState([])
+    // const [cart, setCart] = useState([])
     return (
         <div className='mt-30'>
             <div className="flex flex-col items-center justify-center text-center">
@@ -15,7 +15,10 @@ const ProductCard = ({DigitalData}) => {
 
                 <p className='text-[#627382]'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
                 
-            <div className="flex justify-center  bg-white px-2 py-1.5 shadow-md rounded-full mt-10">
+            </div>
+            
+            <div className="sticky top-0 z-50 py-4 bg-white/80 backdrop-blur-md">
+                <div className="flex justify-center bg-white px-2 py-1.5 shadow-md rounded-full max-w-fit mx-auto border border-zinc-100">
            {/* daynamic kore cls ke than condition diye bg cng kora hoise */}
                 <button onClick={() => setProduct('product')}
 
@@ -28,8 +31,9 @@ const ProductCard = ({DigitalData}) => {
                 >Cart ({cart.length})
                 </button>
                 </div>
-                
             </div>
+                
+            
             <div className={`${product === 'product' ?'grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6' : ''} container mx-auto mt-10`}>
                 {
                     product === 'product' ?

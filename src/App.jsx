@@ -6,29 +6,35 @@ import Navbar from './Components/Navbar'
 import SimplePricing from './Components/SimplePricing'
 import ThreeStep from './Components/ThreeStep'
 import ProductCard from './Components/Card/ProductCard'
-import { ToastContainer } from 'react-toastify'
+import { useState } from 'react'
+import Footer from './Components/Footer'
 
 function App() {
   const DigitalData = fetch('/Data.json').then(res => res.json())
-
+  const [product, setProduct] = useState('product')
+  const [cart, setCart] = useState([])
   return (
     <>
     <header>
-      <Navbar></Navbar>
+      <Navbar cart={cart} setCart={setCart} product={product} setProduct={setProduct}
+></Navbar>
       <Banner></Banner>
     </header>
     <main>
       <Mid></Mid>
 
       <Suspense fallback={<div>Loading...</div>}>
-      <ProductCard DigitalData={DigitalData}></ProductCard>
+      <ProductCard DigitalData={DigitalData} product={product} setProduct={setProduct} cart={cart} setCart={setCart}
+></ProductCard>
       </Suspense>
 
       <ThreeStep></ThreeStep>
       <SimplePricing></SimplePricing>
     </main>
-    <footer></footer>
-    <ToastContainer />
+    <footer>
+      <Footer></Footer>
+    </footer>
+    
     </>
   )
 }

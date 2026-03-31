@@ -39,7 +39,7 @@ const ThreeStep = () => {
                     stepsData.map((step) => (
                         <div key={step.id} className="card bg-base-100 shadow-sm border border-gray-100 px-6 py-[88px] relative">
                             
-                            <div className=" bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full w-8 h-8 flex justify-center items-center absolute top-2 -right-1 transform -translate-x-1/2">
+                            <div className=" text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full w-8 h-8 flex justify-center items-center absolute top-2 -right-1 transform -translate-x-1/2">
                                 <p >{step.id}</p>
                             </div>
                             <figure className=" pt-10">
