@@ -5,9 +5,6 @@ import CartCard from '../Cart/CartCard';
 const ProductCard = ({DigitalData, cart, setCart,setProduct, product}) => {
     const data = use(DigitalData)
     
-    //const [product, setProduct] = useState('product')
-    
-    // const [cart, setCart] = useState([])
     return (
         <div className='mt-30'>
             <div className="flex flex-col items-center justify-center text-center">

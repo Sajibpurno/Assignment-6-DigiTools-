@@ -20,6 +20,7 @@ function App() {
 ></Navbar>
       <Banner></Banner>
     </header>
+    
     <main>
       <Mid></Mid>
 
@@ -31,10 +32,10 @@ function App() {
       <ThreeStep></ThreeStep>
       <SimplePricing></SimplePricing>
     </main>
+
     <footer>
       <Footer></Footer>
     </footer>
-    
     </>
   )
 }

@@ -32,7 +32,7 @@ const Card = ({ product, cart, setCart }) => {
         <div className="card bg-white shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300 rounded-[32px] overflow-hidden relative">
             <div className="card-body p-8">
                 
-                {/* 1. Header with Icon & Tag */}
+                
                 <div className="flex justify-between items-start mb-6">
                     <div className="text-4xl">{product.icon}</div>
                     <span className={`badge border px-3 py-3 text-xs font-bold rounded-full ${getTagStyles(product.tagType)}`}>
@@ -40,7 +40,6 @@ const Card = ({ product, cart, setCart }) => {
                     </span>
                 </div>
 
-                {/* 2. Product Name & Description */}
                 <div className="mb-6">
                     <h2 className="text-2xl font-bold text-gray-900 leading-tight">{product.name}</h2>
                     <p className="text-gray-500 text-sm mt-2 leading-relaxed h-12 overflow-hidden">

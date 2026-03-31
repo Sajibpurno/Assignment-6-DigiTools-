@@ -1,7 +1,6 @@
 import React from 'react';
 import HeroImg from '../assets/banner.png'
 import { CiPlay1 } from 'react-icons/ci';
-// import { LuPlayCircle } from "react-icons/lu";
 
 const Banner = () => {
     return (
