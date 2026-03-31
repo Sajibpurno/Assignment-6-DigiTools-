@@ -5,16 +5,16 @@ import { CiPlay1 } from 'react-icons/ci';
 
 const Banner = () => {
     return (
-        /* Container and Centering */
+        
         <div className="container mx-auto px-6 py-20 min-h-screen flex items-center justify-center">
             
-            {/* Grid for Left Content and Right Image */}
+            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-15 items-center">
                 
-                {/* --- Left Content --- */}
+                
                 <div className="flex flex-col space-y-8 max-w-xl">
                     
-                    {/* 1. Badge with Glow Icon */}
+                    
                     <div className="flex items-center gap-2.5 bg-purple-100 border border-purple-200 text-purple-800 rounded-full px-4 py-2 text-sm font-medium self-start shadow-inner shadow-purple-200/50">
                         <div className="w-2.5 h-2.5 bg-purple-600 rounded-full ring-4 ring-purple-200 animate-pulse"></div>
                         <span>New: AI-Powered Tools Available</span>
@@ -36,7 +36,7 @@ const Banner = () => {
                             Explore Products
                         </button>
                         
-                        {/* Secondary 'Watch Demo' Button */}
+                        
                         <button className="btn btn-outline border-purple-300 text-purple-700 hover:bg-purple-100 hover:border-purple-300 rounded-full px-8 font-bold text-base flex items-center gap-2">
                             <CiPlay1></CiPlay1>
                             <span>Watch Demo</span>
