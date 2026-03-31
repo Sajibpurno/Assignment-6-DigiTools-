@@ -1,7 +1,7 @@
 import React from 'react';
 import { CiShoppingCart } from "react-icons/ci";
 
-const Navbar = ({cart, setProduct, product}) => {
+const Navbar = ({cart, setProduct}) => {
   return (
     <div className="navbar container  mx-auto sticky top-0 z-50 bg-white/80 ">
       <div className="navbar-start">
@@ -42,8 +42,8 @@ const Navbar = ({cart, setProduct, product}) => {
                             }
         <button onClick={() => setProduct('cart')}><CiShoppingCart size={28} /></button>
         </div>
-        <h3 className="flex items-center gap-2 text-lg">Login</h3>
-        <a className="btn border-none text-white rounded-full px-8 py-3 bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 transition-all font-semibold shadow-lg shadow-purple-500/20">
+        <h3 className="flex items-center gap-2 text-lg font-semibold">Login</h3>
+        <a className="btn hidden md:inline-flex border-none text-white rounded-full px-8 py-3 bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 transition-all font-semibold shadow-lg shadow-purple-500/20">
   Get Started
 </a>
       </div>

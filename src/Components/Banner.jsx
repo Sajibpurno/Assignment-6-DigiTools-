@@ -44,7 +44,7 @@ const Banner = () => {
                     </div>
                 </div>
 
-                {/* --- Right Image Placeholder --- */}
+                
                 <div className="">
                     <img src={HeroImg} alt="" />
                 </div>

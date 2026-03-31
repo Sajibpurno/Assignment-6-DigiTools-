@@ -7,12 +7,12 @@ const Footer = () => {
     return (
         <footer className="bg-[#101727] pt-30 pb-20">
 
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-11">
+      <div className="max-w-7xl mx-auto px-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-11 text-center md:text-left">
           {/* Logo & Description */}
           <div className="">
-            <div className="flex items-center gap-3 mb-6">
-              <h2 className="text-4xl font-bold tracking-tighter text-white">
+            <div className="">
+              <h2 className="md:text-4xl text-2xl font-bold text-white mb-5 ">
                 DigiTools
               </h2>
             </div>
@@ -103,7 +103,7 @@ const Footer = () => {
 
           <div className="">
             <p className='text-white text-xl font-semibold'>Social Links</p>
-            <span className='flex gap-3 mt-4'>
+            <span className='flex gap-3 mt-4 '>
                 <img src={Ins} alt="" />
                 <img src={Fb} alt="" />
                 <img src={Twi} alt="" />

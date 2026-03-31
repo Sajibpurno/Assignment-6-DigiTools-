@@ -22,12 +22,12 @@ const ProductCard = ({DigitalData, cart, setCart,setProduct, product}) => {
            {/* daynamic kore cls ke than condition diye bg cng kora hoise */}
                 <button onClick={() => setProduct('product')}
 
-                className={`btn font-semibold text-lg bg-white border-none ${product === 'product' ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA]  text-white" : ""} rounded-full px-12 py-7`}>Products</button>
+                className={`btn font-semibold text-lg bg-white border-none ${product === 'product' ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA]  text-white" : ""} rounded-full md:px-12 md:py-7`}>Products</button>
 
                 <button onClick={() => setProduct('cart')} 
 
                 className={`btn font-semibold text-lg bg-white border-none ${product === 'cart' ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : ""}
-                    rounded-full px-12 py-7`} 
+                    rounded-full  md:px-12 md:py-7`} 
                 >Cart ({cart.length})
                 </button>
                 </div>
