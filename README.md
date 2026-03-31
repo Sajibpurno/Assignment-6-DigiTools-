@@ -1,16 +1,26 @@
-# React + Vite
+🚀 DigiTools - Premium Digital Asset Marketplace
+DigiTools is a modern, high-performance web application designed for creators and professionals to discover and purchase premium digital assets. From AI writing assistants to design templates, it’s a one-stop solution to boost productivity.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛠️ Technology Used
+React.js (Vite): For a fast and component-based frontend architecture.
 
-Currently, two official plugins are available:
+Tailwind CSS 4: For building a modern, utility-first, and highly responsive design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+DaisyUI: To implement professional-grade UI components like Cards, Badges, and Buttons.
 
-## React Compiler
+React Icons: Used for intuitive navigation and visual cues (Checkmarks, Shopping Cart, ect).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Lucide React / HeroIcons: For clean and minimal iconography.
 
-## Expanding the ESLint configuration
+✨ Key Features
+🛒 Cart-
+Adding or removing items is super smooth. As soon as you click a product, the cart counter in the Navbar and cart button also updates immediately so you always know how many items you've picked.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📊 Smart Product Display-
+All products are organized in a clean grid with helpful tags like "Best Seller" or "New." This makes it easy to see what’s trending. Everything—from the price to the icons—is loaded dynamically, making the store feel professional and alive.
+
+📱 Mobile-Friendly & Easy Navigation-
+The app looks great on any screen, especially on phones. We used a "Sticky" bar so you can easily switch between your products and your cart without scrolling all the way back up. It’s built to stay clean and simple on smaller devices.
+
+👨‍💻 Author
+[Shajib Chanda] Final Year BSc in CSE Student
