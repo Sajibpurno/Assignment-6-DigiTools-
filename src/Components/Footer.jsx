@@ -103,7 +103,7 @@ const Footer = () => {
 
           <div className="">
             <p className='text-white text-xl font-semibold'>Social Links</p>
-            <span className='flex gap-3 mt-4 '>
+            <span className='flex gap-3 mt-4 justify-center md:justify-end'>
                 <img src={Ins} alt="" />
                 <img src={Fb} alt="" />
                 <img src={Twi} alt="" />
